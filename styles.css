@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300&display=swap');
+
+:root {
+    /* Variáveis dadas no pdf. Ex: var(--nome)*/
+    --nav-links-color: #fff;
+    --button-hover-color: #878584;
+    --backoffice-menu-bg: #343a40;
+    --table-head-bg: #e9ecef;
+    --nav-link-hover-color: #f79800;
+    --footer-color: #e3e3e3;
+    --dark-layer: linear-gradient(rgba(0,0,0,.6), rgba(0,0,0,.6));
+    --header-bg-image: url(cover-image.jpg);
+    --edit-button-color: #ffa207;
+    --delete-button-color: #dc3545;
+    --pagination-active-bg: #007bff;
+  }
+
+  * {
+    font-family: 'Montserrat', sans-serif;
+    padding: 0;
+    margin: 0;
+    border: 0;
+  }
+
+  a{
+      text-decoration: none;
+      color: inherit;
+  }
+
+  header{
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      background-image: var(--dark-layer),var(--header-bg-image);
+      background-size: cover;
+      background-position: center;
+      height: 45vh;
+      padding: 2% 5%;
+      box-sizing: border-box;
+      color: var(--nav-links-color)
+  }
+
+  header a:hover{
+      color: var(--nav-link-hover-color)
+  }
+
+  .topnav{
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+  }
+
+  .topnav > nav, .bottomnav{
+      display: flex;
+      column-gap: 2rem;
+  }
+
+  .bottomnav{
+      background-color: var(--backoffice-menu-bg);
+      color: var(--nav-links-color);
+      font-size: 0.7rem;
+      padding: 1rem 5%;
+  }
+
+  main{
+      display: flex;
+      flex-direction: column;
+      min-height: 40vh;
+      width: 80%;
+      margin: 1rem auto;
+      align-items: center;
+  }
+
+  table{
+      border-spacing: 0;
+  }
+
+  thead{
+      background-color: var(--table-head-bg);
+  }
+
+  tbody{
+        vertical-align: top;
+  }
+
+  th,td{
+      text-align: left;
+      width: 20rem;
+      padding: 1 rem;
+  }
+  
+  footer{
+      display: flex;
+      background-color: var(--footer-color);
+      align-items: center;
+      justify-content: space-between;
+      padding: 0 4rem;
+      min-height: 2rem;
+  }
